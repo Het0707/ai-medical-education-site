@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI in Medical Diagnostics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="animated-section">
+            <h2>Welcome to AI in Medical Diagnostics</h2>
+        </section>
+        <nav>
+            <button onclick="loadPage('pages/intro.html')">Introduction</button>
+            <button onclick="loadPage('pages/current_use.html')">Current Use</button>
+            <button onclick="loadPage('pages/future_scope.html')">Future</button>
+            <button onclick="loadPage('pages/ethics.html')">Ethics</button>
+            <button onclick="loadPage('pages/quiz.html')">Quiz</button>
+        </nav>
+    </header>
+
+    <main>
+        <iframe id="content-frame" name="content-frame" src="pages/intro.html" frameborder="0"
+            onload="resizeIframe(this)"></iframe>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
